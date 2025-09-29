@@ -1,0 +1,55 @@
+pretrain:
+resume: 
+seed: 1024
+data:
+    dataset: SurgVisDom
+    modality: RGB
+    num_segments: 4
+    seg_length: 1
+    split: 1
+    batch_size: 32
+    workers: 16
+    gpus: 2
+    num_classes: 3
+    image_tmpl: 'img_{:05d}.png'
+    train_list: 
+    val_list: 
+    label_list: 'lists/labels.csv'
+    index_bias: 0
+    input_size: 224
+    randaug:
+        N: 1
+        M: 2
+network:
+    arch: ViT-B/16  #ViT-B/32 ViT-B/16
+    init: True 
+    drop_out: 0.0 
+    emb_dropout: 0.0 
+    type: clip_surgvisdom
+    sim_header: "Transf"  #Transf   meanP   LSTM   Transf_cls Conv_1D
+    fix_text: False
+    fix_img: False
+    describe:
+solver:
+    alpha: 0.5
+    fac_weight: 0.4
+    aug_weight: 0.8
+    type: cosine
+    epochs: 30
+    start_epoch: 0
+    epoch_offset: 0
+    optim: adamw
+    lr: 3.e-5
+    lr_warmup_step: 5
+    momentum: 0.9
+    weight_decay: 0.2
+    lr_decay_step: 15
+    lr_decay_factor: 0.1
+    clip_gradient: 20
+    loss_type: nll
+    evaluate: False
+    ratio: 1
+    f_ratio: 10
+logging:
+    print_freq: 10
+    eval_freq: 10
