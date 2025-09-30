@@ -26,9 +26,9 @@ Key contributions:
    - Store all frames (`.jpg` or `.png`) of that video inside the folder.  
 
    <pre>
-   Example:
-   
  ```text
+Example:
+
 data/
 ├── video_001/
 │   ├── 0001.jpg
