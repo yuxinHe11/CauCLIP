@@ -1,16 +1,16 @@
-# CauCLIP
+# Surgical Phase Recognition with CLIP
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
-
-Official implementation of our ICASSP 2026 paper:  
-**Causality-inspired Augmentation and Suppression for Surgical Phase Recognition**
+ 
+**CauCLIP: Bridging the Sim-to-real Gap in Surgical Video Understanding
+Via Causality-inspired Vision-Language Modeling**
 
 ---
 
 ## 📌 Introduction
 This repository implements our framework for **surgical phase recognition** under domain shift.  
-We build upon **CLIP** to bridge the gap between Virtual Reality (VR) training data and Porcine testing data in the **MICCAI SurgVisDom challenge**.  
+We build upon **CLIP** to bridge the gap between Virtual Reality (VR) training data and Porcine testing data in the **MICCAI2020 SurgVisDom challenge**.  
 
 Key contributions:
 - **Frequency-based augmentation** to perturb domain-specific low-level style while preserving semantics.  
@@ -26,3 +26,35 @@ Key contributions:
    - Store all frames (`.jpg` or `.png`) of that video inside the folder.  
 
    Example:
+data/
+├── video_001/
+│ ├── 0001.jpg
+│ ├── 0002.jpg
+│ ├── ...
+├── video_002/
+│ ├── 0001.jpg
+│ ├── 0002.jpg
+│ ├── ...
+
+
+2. **Create training lists**  
+- In the `lists/` directory, create `.txt` files to specify the dataset split.  
+- Each line in a `.txt` file should contain:
+  ```
+  <path> <num_frames> <label>
+  ```
+- Example:
+  ```
+  data/video_001 128 0
+  data/video_002 64  1
+  ```
+
+where:
+- `<path>`: relative path to the video frame folder  
+- `<num_frames>`: total number of frames in the folder  
+- `<label>`: ground-truth class label for the video  
+
+---
+
+
+
