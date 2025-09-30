@@ -26,24 +26,16 @@ Key contributions:
    - Store all frames (`.jpg` or `.png`) of that video inside the folder.  
 
    Example:
+
 data/
-
 ├── video_001/
-
 │ ├── 0001.jpg
-
 │ ├── 0002.jpg
-
 │ ├── ...
-
 ├── video_002/
-
 │ ├── 0001.jpg
-
 │ ├── 0002.jpg
-
 │ ├── ...
-
 
 
 3. **Create training lists**  
