@@ -27,17 +27,26 @@ Key contributions:
 
    Example:
 data/
+
 ├── video_001/
+
 │ ├── 0001.jpg
+
 │ ├── 0002.jpg
+
 │ ├── ...
+
 ├── video_002/
+
 │ ├── 0001.jpg
+
 │ ├── 0002.jpg
+
 │ ├── ...
 
 
-2. **Create training lists**  
+
+3. **Create training lists**  
 - In the `lists/` directory, create `.txt` files to specify the dataset split.  
 - Each line in a `.txt` file should contain:
   ```
