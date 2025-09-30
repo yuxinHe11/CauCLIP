@@ -24,8 +24,10 @@ Key contributions:
 1. **Extract frames from each video**  
    - For each surgical video, create a folder named after the video.  
    - Store all frames (`.jpg` or `.png`) of that video inside the folder.  
-Example:
+
    <pre>
+   Example:
+   
  ```text
 data/
 ├── video_001/
