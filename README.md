@@ -25,17 +25,19 @@ Key contributions:
    - For each surgical video, create a folder named after the video.  
    - Store all frames (`.jpg` or `.png`) of that video inside the folder.  
 
-   Example:
-
+   <pre>
+```text
 data/
 ├── video_001/
-│ ├── 0001.jpg
-│ ├── 0002.jpg
-│ ├── ...
+│   ├── 0001.jpg
+│   ├── 0002.jpg
+│   ├── ...
 ├── video_002/
-│ ├── 0001.jpg
-│ ├── 0002.jpg
-│ ├── ...
+│   ├── 0001.jpg
+│   ├── 0002.jpg
+│   ├── ...
+```
+</pre>
 
 
 3. **Create training lists**  
