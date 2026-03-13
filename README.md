@@ -9,7 +9,7 @@
 ---
 
 ## Overview
-We introduce a causality-inspired vision-language framework for surigal phase recognition under domain shift. Our approach integrates a frequency-based augmentation strategy to perturb domain-specific attributes while preserving semantic structures, and a causal suppression loss that mitigates non-causal biases and reinforces causal surgical features. On the SurgVisDom hard domain adaptation benchmark, CauCLIP achieves state-of-the-art performance with 0.642 Weighted F1, 0.487 Unweighted F1, 0.708 Global F1, and 0.651 Balanced Accuracy, outperforming prior approaches
+We introduce a causality-inspired vision-language framework for surigal phase recognition under domain shift. Our approach integrates a frequency-based augmentation strategy to perturb domain-specific attributes while preserving semantic structures, and a causal suppression loss that mitigates non-causal biases and reinforces causal surgical features. On the SurgVisDom hard domain adaptation benchmark, CauCLIP achieves state-of-the-art performance with 0.642 Weighted F1, 0.487 Unweighted F1, 0.708 Global F1, and 0.651 Balanced Accuracy, outperforming prior approaches.
 
 <p align="center">
 <img src="fig/framework.png" width="750">
